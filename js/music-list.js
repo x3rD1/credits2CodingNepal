@@ -115,7 +115,7 @@ let allMusic = [
     {
         img : 'music-18',
         name : 'Somewhere Only We Know',
-        artist : 'Rhianne',
+        artist : 'Keane',
         src : 'music-18'
     },
     {
