@@ -23,7 +23,7 @@
       <p class="name"></p>
       <p class="artist"></p>
       <i class="fa fa-volume-down"></i>
-      <input value="10" min="0" max="100" type="range" name="volume" id="vol">
+      <input value="20" min="0" max="100" type="range" name="volume" id="vol">
       <i class="fa fa-volume-up"></i>
     </div>
     <div class="progress-area">
@@ -37,12 +37,12 @@
     </div>
     <div class="controls">
       <i id="repeat-plist" class="material-icons" title="Playlist looped">repeat</i>
-      <i id="prev" class="material-icons" onclick="defVol()">skip_previous</i>
+      <i id="prev" class="material-icons" onclick="minVol()">skip_previous</i>
       <div class="play-pause">
         <i class="material-icons play" onclick="minVol()">play_arrow</i>
       </div>
-      <i id="next" class="material-icons" onclick="defVol()">skip_next</i>
-      <i id="more-music" class="material-icons" onclick="defVol()">queue_music</i>
+      <i id="next" class="material-icons" onclick="minVol()">skip_next</i>
+      <i id="more-music" class="material-icons" onclick="minVol()">queue_music</i>
     </div>
     <div class="music-list">
       <div class="header">

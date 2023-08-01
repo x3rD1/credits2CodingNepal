@@ -14,16 +14,13 @@ vol = wrapper.querySelector("#vol"),
 closemoreMusic = musicList.querySelector("#close");
 
 function minVol(){
-  mainAudio.volume = 0.001;
+  mainAudio.volume = 0.002;
   vol.oninput = function (){
     mainAudio.volume = vol.value/10000;
   }
-  if (vol.value != 0.001){
+  if (vol.value != 0.002){
     mainAudio.volume = vol.value/10000;
   }
-}
-function defVol(){
-  mainAudio.volume = vol.value;
 }
 
 let musicIndex = Math.floor((Math.random() * allMusic.length) + 1);
