@@ -13,9 +13,19 @@ moreMusicBtn = wrapper.querySelector("#more-music"),
 vol = wrapper.querySelector("#vol"),
 closemoreMusic = musicList.querySelector("#close");
 
-vol.oninput = function (){
-  mainAudio.volume = vol.value/100;
+function minVol(){
+  mainAudio.volume = 0.001;
+  vol.oninput = function (){
+    mainAudio.volume = vol.value/10000;
+  }
+  if (vol.value != 0.001){
+    mainAudio.volume = vol.value/10000;
+  }
 }
+function defVol(){
+  mainAudio.volume = vol.value;
+}
+
 let musicIndex = Math.floor((Math.random() * allMusic.length) + 1);
 isMusicPaused = true;
 
