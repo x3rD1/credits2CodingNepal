@@ -16,10 +16,10 @@ closemoreMusic = musicList.querySelector("#close");
 function minVol(){
   mainAudio.volume = 0.1;
   vol.oninput = function (){
-    mainAudio.volume = vol.value/10000;
+    mainAudio.volume = vol.value/1000;
   }
   if (vol.value != 0.1){
-    mainAudio.volume = vol.value/10000;
+    mainAudio.volume = vol.value/1000;
   }
 }
 
